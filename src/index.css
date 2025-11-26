@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bloomberg-black text-bloomberg-text font-sans overflow-hidden antialiased;
+    background-color: #000000;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+  .text-bloomberg-orange-glow {
+    text-shadow: 0 0 2px rgba(245, 128, 37, 0.5);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000000; 
+  border-left: 1px solid #1A1A1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333; 
+  border: 1px solid #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F58025;
+}
+
+/* Blinking Cursor */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* CRT Scanline Effect (Optional subtle) */
+.scanline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0,0,0,0.2) 50%,
+    rgba(0,0,0,0.2)
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
