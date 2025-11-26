@@ -4,8 +4,7 @@
 
 @layer base {
   html {
-    font-size: 125%; /* Increased base size (approx 20px instead of 16px) to scale everything up, but 150% might be too aggressive causing overflow. 1.25 is safer start, but user asked for 1.5x. Let's go with 150% as requested. */
-    font-size: 24px; /* 1.5 * 16px default = 24px. Explicitly setting this handles the scaling. */
+    font-size: 17px; /* Reduced from 24px by ~30% to scale everything down */
   }
   body {
     @apply bg-bloomberg-black text-bloomberg-text font-sans overflow-hidden antialiased;
