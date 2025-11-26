@@ -9,8 +9,8 @@ export default {
       colors: {
         bloomberg: {
           black: '#000000',
-          orange: '#FFBF00', // Updated to Amber as requested
-          orangeBright: '#FFD000', // Slightly brighter amber
+          orange: '#FF7F00', // Reverted to classic Bloomberg Orange for better contrast
+          orangeBright: '#FFA500',
           gray: '#1A1A1A',
           border: '#2A2A2A',
           text: '#E0E0E0',

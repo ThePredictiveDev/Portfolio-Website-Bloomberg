@@ -1,7 +1,7 @@
 const LeadershipPanel = () => {
   return (
     <div className="h-full overflow-y-auto text-bloomberg-text font-mono text-sm">
-      <h2 className="text-lg font-bold text-bloomberg-orange mb-4 border-b border-bloomberg-border pb-1">⚡ LEADERSHIP & INITIATIVES</h2>
+      <h2 className="text-lg font-bold text-bloomberg-orange mb-4 border-b border-bloomberg-border pb-1">>> LEADERSHIP & INITIATIVES</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
          {/* Item 1 */}
