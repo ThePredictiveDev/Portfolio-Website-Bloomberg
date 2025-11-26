@@ -2,6 +2,7 @@
   "name": "bloomberg-portfolio",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://thepredictivedev.github.io/Portfolio-Website-Bloomberg/",
   "type": "module",
   "scripts": {
     "dev": "vite",
