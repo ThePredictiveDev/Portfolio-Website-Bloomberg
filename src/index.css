@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-size: 17px; /* Reduced from 24px by ~30% to scale everything down */
+    font-size: 15px; /* Further reduced from 17px to 15px */
   }
   body {
     @apply bg-bloomberg-black text-bloomberg-text font-sans overflow-hidden antialiased;
