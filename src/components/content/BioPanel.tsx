@@ -88,10 +88,10 @@ const BioPanel = () => {
               FOCUS TAGS
             </div>
             <div className="p-3 flex flex-wrap gap-2">
-              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-0.5 text-[10px] text-bloomberg-cyan">IB / PE</span>
-              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-0.5 text-[10px] text-bloomberg-cyan">M&A</span>
-              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-0.5 text-[10px] text-bloomberg-cyan">QUANT</span>
-              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-0.5 text-[10px] text-bloomberg-cyan">AI STRATEGY</span>
+              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-1 text-xs font-bold text-bloomberg-cyan">IB / PE</span>
+              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-1 text-xs font-bold text-bloomberg-cyan">M&A</span>
+              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-1 text-xs font-bold text-bloomberg-cyan">QUANT</span>
+              <span className="bg-bloomberg-gray border border-bloomberg-border px-2 py-1 text-xs font-bold text-bloomberg-cyan">AI STRATEGY</span>
             </div>
           </div>
 
