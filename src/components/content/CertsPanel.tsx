@@ -45,7 +45,7 @@ const CertsPanel = () => {
                  <div className="font-bold text-bloomberg-text">{cert.name}</div>
                  <div className="text-xs text-gray-400">{cert.inst}</div>
               </div>
-              <div className="text-bloomberg-yellow font-mono text-xs">{cert.date}</div>
+              <div className="text-white font-bold font-mono text-xs">{cert.date}</div>
            </div>
         ))}
       </div>

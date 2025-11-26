@@ -17,10 +17,10 @@ const SidePanel = () => {
     
     return (
       <div key={idx} className="flex justify-between items-center px-2 py-1.5 border-b border-gray-800 hover:bg-white/5 font-mono text-sm leading-tight">
-        <div className="text-bloomberg-cyan font-bold truncate flex-1 min-w-0">{item.symbol}</div>
-        <div className="text-right flex items-center gap-2 flex-shrink-0">
-          <div className="text-white w-24 text-right font-bold">{item.price.toLocaleString('en-US', { minimumFractionDigits: digits, maximumFractionDigits: digits })}</div>
-          <div className={`w-18 text-right font-bold ${item.change >= 0 ? 'text-bloomberg-green' : 'text-bloomberg-red'}`}>
+        <div className="text-bloomberg-cyan font-bold truncate flex-1 min-w-0 pr-1">{item.symbol}</div>
+        <div className="text-right flex items-center justify-end gap-1 flex-shrink-0 min-w-[140px]">
+          <div className="text-white text-right font-bold">{item.price.toLocaleString('en-US', { minimumFractionDigits: digits, maximumFractionDigits: digits })}</div>
+          <div className={`text-right font-bold w-16 ${item.change >= 0 ? 'text-bloomberg-green' : 'text-bloomberg-red'}`}>
             {item.change >= 0 ? '+' : ''}{item.changePercent.toFixed(2)}%
           </div>
         </div>

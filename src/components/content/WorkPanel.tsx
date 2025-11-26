@@ -9,13 +9,13 @@ const WorkPanel = () => {
         
         {/* Column 1: Corporate Roles */}
         <div>
-          <h2 className="text-lg font-bold text-bloomberg-orange mb-4 border-b border-bloomberg-border pb-1">⚡ CORPORATE ROLES</h2>
+          <h2 className="text-lg font-bold text-bloomberg-orange mb-4 border-b border-bloomberg-border pb-1">&gt;&gt; CORPORATE ROLES</h2>
           
           <div className="flex flex-col gap-6">
             <div className="group hover:bg-white/5 p-2 rounded transition-colors">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-bloomberg-orange font-bold text-base">IIFL Capital Services</h3>
-                <span className="text-bloomberg-gray text-xs">JUNE 2026 - JULY 2026</span>
+                <span className="text-white font-bold text-xs">JUNE 2026 - JULY 2026</span>
               </div>
               <div className="text-white mb-2">Incoming Summer Analyst (IB/PE Division) | TBD</div>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -27,7 +27,7 @@ const WorkPanel = () => {
             <div className="group hover:bg-white/5 p-2 rounded transition-colors">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-bloomberg-orange font-bold text-base">HDB Financial Services</h3>
-                <span className="text-bloomberg-gray text-xs">DEC 2025 - JAN 2026</span>
+                <span className="text-white font-bold text-xs">DEC 2025 - JAN 2026</span>
               </div>
               <div className="text-white mb-2">Incoming Winter Analyst (Product Team) | Noida, UP</div>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -39,7 +39,7 @@ const WorkPanel = () => {
              <div className="group hover:bg-white/5 p-2 rounded transition-colors">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-bloomberg-orange font-bold text-base">Meanlabs Software Pvt Ltd</h3>
-                <span className="text-bloomberg-gray text-xs">JUN 2025 - PRESENT</span>
+                <span className="text-white font-bold text-xs">JUN 2025 - PRESENT</span>
               </div>
               <div className="text-white mb-2">Head of AI & Business Development | Noida, UP</div>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -52,7 +52,7 @@ const WorkPanel = () => {
             <div className="group hover:bg-white/5 p-2 rounded transition-colors">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-bloomberg-orange font-bold text-base">FidelFolio Investments</h3>
-                <span className="text-bloomberg-gray text-xs">FEB 2025 - MAY 2025</span>
+                <span className="text-white font-bold text-xs">FEB 2025 - MAY 2025</span>
               </div>
               <div className="text-white mb-2">Quantitative Analyst Intern | Mumbai, MH (WFH)</div>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -65,7 +65,7 @@ const WorkPanel = () => {
              <div className="group hover:bg-white/5 p-2 rounded transition-colors">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-bloomberg-orange font-bold text-base">Private Portfolio</h3>
-                <span className="text-bloomberg-gray text-xs">2022 - PRESENT</span>
+                <span className="text-white font-bold text-xs">2022 - PRESENT</span>
               </div>
               <div className="text-white mb-2">Long Term Investor | Personal</div>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -78,13 +78,13 @@ const WorkPanel = () => {
 
         {/* Column 2: Entrepreneurial */}
         <div>
-          <h2 className="text-lg font-bold text-bloomberg-orange mb-4 border-b border-bloomberg-border pb-1">⚡ ENTREPRENEURIAL VENTURES</h2>
+          <h2 className="text-lg font-bold text-bloomberg-orange mb-4 border-b border-bloomberg-border pb-1">&gt;&gt; ENTREPRENEURIAL VENTURES</h2>
           
           <div className="flex flex-col gap-6 mb-8">
             <div className="group hover:bg-white/5 p-2 rounded transition-colors">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-bloomberg-orange font-bold text-base">Itivrit AI</h3>
-                <span className="text-bloomberg-gray text-xs">OCT 2025 - PRESENT</span>
+                <span className="text-white font-bold text-xs">OCT 2025 - PRESENT</span>
               </div>
               <div className="text-white mb-2">Co-Founder | Remote</div>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -97,7 +97,7 @@ const WorkPanel = () => {
             <div className="group hover:bg-white/5 p-2 rounded transition-colors">
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-bloomberg-orange font-bold text-base">BioPay</h3>
-                <span className="text-bloomberg-gray text-xs">MAY 2025 - OCT 2025</span>
+                <span className="text-white font-bold text-xs">MAY 2025 - OCT 2025</span>
               </div>
               <div className="text-white mb-2">Founder | Noida, UP</div>
               <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -114,7 +114,7 @@ const WorkPanel = () => {
                 onClick={() => setShowPrevious(!showPrevious)} 
                 className="w-full text-left bg-bloomberg-gray text-bloomberg-orange px-2 py-1 font-bold flex justify-between items-center"
              >
-                <span>⚫ PREVIOUS EXPERIENCE</span>
+                <span>&gt;&gt; PREVIOUS EXPERIENCE</span>
                 <span>{showPrevious ? '▼' : '▶'}</span>
              </button>
              
@@ -123,7 +123,7 @@ const WorkPanel = () => {
                    <div className="group">
                       <div className="flex justify-between items-baseline mb-1">
                         <h3 className="text-bloomberg-orange font-bold text-sm">WorldQuant</h3>
-                        <span className="text-bloomberg-gray text-xs">OCT 2023 - FEB 2025</span>
+                        <span className="text-white font-bold text-xs">OCT 2023 - FEB 2025</span>
                       </div>
                       <div className="text-white text-xs mb-1">Research Consultant</div>
                       <ul className="list-disc list-inside text-gray-400 text-xs">
@@ -135,7 +135,7 @@ const WorkPanel = () => {
                    <div className="group">
                       <div className="flex justify-between items-baseline mb-1">
                         <h3 className="text-bloomberg-orange font-bold text-sm">CollegeCraves</h3>
-                        <span className="text-bloomberg-gray text-xs">SEP 2023 - SEP 2024</span>
+                        <span className="text-white font-bold text-xs">SEP 2023 - SEP 2024</span>
                       </div>
                       <div className="text-white text-xs mb-1">Co-Founder</div>
                       <ul className="list-disc list-inside text-gray-400 text-xs">
@@ -147,7 +147,7 @@ const WorkPanel = () => {
                    <div className="group">
                       <div className="flex justify-between items-baseline mb-1">
                         <h3 className="text-bloomberg-orange font-bold text-sm">Masai</h3>
-                        <span className="text-bloomberg-gray text-xs">SEP 2024 - JAN 2025</span>
+                        <span className="text-white font-bold text-xs">SEP 2024 - JAN 2025</span>
                       </div>
                       <div className="text-white text-xs mb-1">Teaching Assistant CS-101</div>
                       <ul className="list-disc list-inside text-gray-400 text-xs">
@@ -159,7 +159,7 @@ const WorkPanel = () => {
                    <div className="group">
                       <div className="flex justify-between items-baseline mb-1">
                         <h3 className="text-bloomberg-orange font-bold text-sm">Indian Institute of Technology, Mandi</h3>
-                        <span className="text-bloomberg-gray text-xs">AUG 2024 - DEC 2024</span>
+                        <span className="text-white font-bold text-xs">AUG 2024 - DEC 2024</span>
                       </div>
                       <div className="text-white text-xs mb-1">Teaching Assistant DS-1</div>
                       <ul className="list-disc list-inside text-gray-400 text-xs">
