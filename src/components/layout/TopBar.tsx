@@ -1,6 +1,5 @@
 import { useState, useRef, FormEvent } from 'react';
 import { useTerminal } from '../../context/TerminalContext';
-import { Search } from 'lucide-react';
 
 const TopBar = () => {
   const { runCommand } = useTerminal();
@@ -15,14 +14,18 @@ const TopBar = () => {
     }
   };
 
+  // Reordered function keys based on user request:
+  // F1: BIO | F2: WORK | F3: LEADERSHIP | F4: PAPERS | F5: PROJ | F6: CERTS | F7: CASES | F8: CONTACT
   const functionKeys = [
     { key: 'F1', label: 'BIO', cmd: 'BIO' },
-    { key: 'F2', label: 'WORK', cmd: 'WORK' },
-    { key: 'F3', label: 'PAPERS', cmd: 'PAPERS' },
-    { key: 'F4', label: 'PROJ', cmd: 'PROJ' },
-    { key: 'F5', label: 'CERTS', cmd: 'CERTS' },
-    { key: 'F6', label: 'CASES', cmd: 'CASES' },
-    { key: 'F7', label: 'CONTACT', cmd: 'CONTACT' },
+    { key: 'F2', label: 'WORK EXPERIENCE', cmd: 'WORK' },
+    { key: 'F3', label: 'LEADERSHIP EXPERIENCE', cmd: 'LEADERSHIP' },
+    { key: 'F4', label: 'RESEARCH WORK', cmd: 'PAPERS' },
+    { key: 'F5', label: 'PROJECTS', cmd: 'PROJ' },
+    { key: 'F6', label: 'CERTIFICATIONS', cmd: 'CERTS' },
+    { key: 'F7', label: 'CASE STUDIES', cmd: 'CASES' },
+    { key: 'F8', label: 'CONTACT', cmd: 'CONTACT' },
+    { key: 'F9', label: 'HELP', cmd: 'HELP' },
   ];
 
   return (
@@ -52,12 +55,7 @@ const TopBar = () => {
         
         {/* Right side helper links or secondary menu could go here */}
         <div className="flex-1 flex justify-end items-center gap-4 text-xs text-bloomberg-text">
-          <span className="flex items-center gap-1">
-             <Search size={14} className="text-bloomberg-orange" /> 
-             <span className="hidden sm:inline">SEARCH</span>
-          </span>
-          <span className="text-bloomberg-gray">|</span>
-          <span>HELP &lt;F1&gt;</span>
+          <span>HELP &lt;F9&gt;</span>
         </div>
       </div>
 

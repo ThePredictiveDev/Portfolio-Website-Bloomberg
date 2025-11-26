@@ -4,9 +4,9 @@ const papers = [
   {
     status: 'Accepted',
     title: 'Strongly Connected Components Are All You Need',
-    venue: 'ICVGIP/ACPR',
+    venue: 'ICVGIP\'25 (ACM ICPS)',
     link: 'https://doi.org/10.21203/rs.3.rs-7877883/v1',
-    description: 'A novel graph-theoretic framework analyzing attention mechanisms in Vision Transformers, proving that meaningful V-SCCs transcend all other graph-mining operations for interpretability',
+    description: 'A novel graph-theoretic framework analyzing attention mechanisms in Vision Transformers, proving that meaningful SCCs correspond to semantic visual components.',
     tags: ['COMPUTER VISION', 'GRAPH THEORY', 'TRANSFORMERS']
   },
   {
@@ -14,7 +14,7 @@ const papers = [
     title: 'Multiscale Portfolio Optimization',
     venue: 'Journal of Forecasting',
     link: 'https://doi.org/10.21203/rs.3.rs-7841142/v1',
-    description: 'Introduces a scale-diversified portfolio framework decomposing asset returns into frequency bands to separate high-frequency noise from long-term trends',
+    description: 'Introduces a scale-diversified portfolio framework decomposing asset returns into frequency bands to separate high-frequency noise from long-term trends.',
     tags: ['QUANT FINANCE', 'SIGNAL PROCESSING', 'PORTFOLIO MGMT']
   },
   {
@@ -22,7 +22,7 @@ const papers = [
     title: 'Nonparametric Regime Segmentation',
     venue: 'Journal of Forecasting',
     link: 'https://dx.doi.org/10.2139/ssrn.5611890',
-    description: 'A unified estimation pipeline for detecting structural breaks in multivariate financial time series using penalized change-point detection',
+    description: 'A unified estimation pipeline for detecting structural breaks in multivariate financial time series using penalized change-point detection.',
     tags: ['TIME SERIES', 'REGIME SWITCHING', 'ECONOMETRICS']
   },
   {
@@ -30,23 +30,23 @@ const papers = [
     title: 'Corporate Insurance Make-or-Buy',
     venue: 'JII',
     link: 'https://dx.doi.org/10.2139/ssrn.5599810',
-    description: 'Agent-based simulation of self-insurance viability for Indian corporations, identifying discontinuous cost structures due to regulatory capital requirements',
+    description: 'Analyzes self-insurance viability for Indian corporations, identifying discontinuous cost structures due to regulatory capital requirements.',
     tags: ['CORPORATE FINANCE', 'INSURANCE', 'REGULATION']
   },
   {
     status: 'Under Review',
-    title: 'Modelling the Ballot',
+    title: 'Modeling the Ballot',
     venue: 'JASSS',
     link: 'https://doi.org/10.31235/osf.io/mp9kh_v1',
-    description: 'Agent-based simulation of democratic decision-making comparing six voting mechanisms on welfare and fairness',
+    description: 'Agent-based simulation of democratic decision-making comparing six voting mechanisms on welfare and fairness.',
     tags: ['GAME THEORY', 'SOCIAL CHOICE', 'ABM']
   },
   {
     status: 'Submitted',
     title: 'FinChart-Multimodal',
     venue: 'CVPR',
-    link: '#',
-    description: 'A large-scale dataset aligning OHLCV time series with chart images to enable scalable multimodal financial analysis',
+    link: '', // Empty link to signify no access
+    description: 'A large-scale dataset aligning OHLCV time series with chart images to enable multimodal financial analysis.',
     tags: ['COMPUTER VISION', 'FINANCE', 'MULTIMODAL AI']
   }
 ];
@@ -74,22 +74,27 @@ const PapersPanel = () => {
              >
                 <div className={`col-span-2 font-bold ${
                   paper.status === 'Accepted' ? 'text-bloomberg-green' : 
-                  paper.status.includes('Review') ? 'text-bloomberg-yellow' : 'text-gray-400'
+                  paper.status.includes('Review') ? 'text-bloomberg-yellow' : 
+                  paper.status === 'Submitted' ? 'text-bloomberg-blue-300' : 'text-gray-400'
                 }`}>
                   {paper.status}
                 </div>
                 <div className="col-span-6 text-bloomberg-text truncate">{paper.title}</div>
                 <div className="col-span-3 text-gray-400">{paper.venue}</div>
                 <div className="col-span-1 text-right">
-                  <a 
-                    href={paper.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-bloomberg-orange hover:text-bloomberg-orangeBright font-bold"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    VIEW
-                  </a>
+                  {paper.link ? (
+                    <a 
+                      href={paper.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-bloomberg-orange hover:text-bloomberg-orangeBright font-bold"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      VIEW
+                    </a>
+                  ) : (
+                    <span className="text-gray-600 cursor-not-allowed">--</span>
+                  )}
                 </div>
              </div>
              

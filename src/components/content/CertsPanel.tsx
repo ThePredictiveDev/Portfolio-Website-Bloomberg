@@ -4,27 +4,21 @@ const CertsPanel = () => {
   const [showAll, setShowAll] = useState(false);
 
   const certifications = [
-    { name: 'Strategic Leadership & Management', inst: 'Wharton School of Business', date: 'NOV 2025' },
-    { name: 'Finance of M&A, Valuation & Pricing', inst: 'University of Illinois', date: 'AUG 2023' },
+    { name: 'Strategic Leadership & Management', inst: 'Gies College of Business (UIUC)', date: 'NOV 2025' },
+    { name: 'Finance of M&A: Valuation & Pricing', inst: 'University of Illinois (UIUC)', date: 'AUG 2023' },
     { name: 'Fundamentals of Finance', inst: 'Wharton Online', date: 'AUG 2023' },
     { name: 'Fundamentals of Quantitative Modeling', inst: 'Wharton Online', date: 'AUG 2023' },
     { name: 'Intro to Spreadsheets and Models', inst: 'Wharton Online', date: 'SEP 2023' },
-    { name: 'Investment Banking: Financial Analysis', inst: 'Yale College of Business', date: 'SEP 2023' },
+    { name: 'Investment Banking: Financial Analysis', inst: 'Gies College of Business', date: 'SEP 2023' },
     // Hidden by default
     { name: 'Market Risk Management', inst: 'New York Institute of Finance', date: 'SEP 2023' },
     { name: 'Machine Learning in Trading', inst: 'Google Cloud', date: 'SEP 2023' },
     { name: 'Discounted Cash Flow Modeling', inst: 'Coursera', date: 'AUG 2023' },
-    { name: 'Computational Methods in Pricing', inst: 'Stanford University', date: 'OCT 2023' },
+    { name: 'Computational Methods in Pricing', inst: 'Columbia University', date: 'OCT 2023' },
     { name: 'Neural Networks and Deep Learning', inst: 'DeepLearning.AI', date: 'OCT 2023' },
     { name: 'Sequences, Time Series and Prediction', inst: 'DeepLearning.AI', date: 'OCT 2023' },
-    { name: 'Advanced Trading Algorithms', inst: 'Yale School of Business', date: 'SEP 2023' },
+    { name: 'Advanced Trading Algorithms', inst: 'Indian School of Business', date: 'SEP 2023' },
     { name: 'Derivatives - Options & Futures', inst: 'Interactive Brokers', date: 'SEP 2023' },
-    { name: 'FinTech: Foundations', inst: 'Wharton Online', date: 'JULY 2023' },
-    { name: 'Successful Negotiation', inst: 'University of Michigan', date: 'JULY 2023' },
-    { name: 'Machine Learning with Python', inst: 'IBM', date: 'AUG 2023' },
-    { name: 'Linear Algebra for ML', inst: 'DeepLearning.AI', date: 'AUG 2023' },
-    { name: 'Investment Banking Virtual Experience', inst: 'JPMorgan Chase & Co.', date: 'AUG 2023' },
-    { name: 'Introduction to Corporate Finance', inst: 'Wharton Online', date: 'AUG 2023' },
   ];
 
   return (
@@ -36,7 +30,7 @@ const CertsPanel = () => {
         <div className="flex justify-between items-end">
            <div>
              <div className="text-bloomberg-text">CFA Institute - Appearing Feb 2026</div>
-             <div className="text-gray-400 text-xs mt-1 max-w-md">Comprehensive preparation in Ethical Standards, Quant Methods, Economics, and Financial Reporting</div>
+             <div className="text-gray-400 text-xs mt-1 max-w-md">Comprehensive preparation in Ethical Standards, Quant Methods, Economics, and Financial Reporting.</div>
            </div>
            <div className="text-bloomberg-orange text-xl">★</div>
         </div>

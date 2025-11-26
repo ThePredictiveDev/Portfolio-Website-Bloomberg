@@ -9,8 +9,8 @@ export default {
       colors: {
         bloomberg: {
           black: '#000000',
-          orange: '#F58025',
-          orangeBright: '#FF7F00',
+          orange: '#FFBF00', // Updated to Amber as requested
+          orangeBright: '#FFD000', // Slightly brighter amber
           gray: '#1A1A1A',
           border: '#2A2A2A',
           text: '#E0E0E0',
@@ -21,7 +21,7 @@ export default {
         }
       },
       fontFamily: {
-        mono: ['Consolas', 'Monaco', 'Courier New', 'monospace'],
+        mono: ['Inconsolata', 'JetBrains Mono', 'Consolas', 'monospace'], // Updated font stack
         sans: ['Roboto Condensed', 'Arial', 'sans-serif'],
       },
       animation: {
