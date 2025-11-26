@@ -16,7 +16,7 @@ const BottomBar = () => {
   }).replace(/,/g, '').toUpperCase() + ' IST';
 
   return (
-    <div className="fixed bottom-0 w-full flex flex-col z-50 bg-bloomberg-black border-t border-bloomberg-border font-mono text-base select-none">
+    <div className="w-full flex flex-col z-50 bg-bloomberg-black border-t border-bloomberg-border font-mono text-base select-none flex-shrink-0">
       {/* Ticker Strip */}
       <div className="flex items-center bg-black h-10 overflow-hidden border-b border-bloomberg-gray relative">
         <div className="flex animate-marquee whitespace-nowrap gap-12 min-w-full items-center hover:pause-animation">
